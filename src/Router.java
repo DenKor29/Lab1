@@ -1,13 +1,26 @@
 public class Router extends CommunicationDevice {
 
-    private String IpAdress;
+    private String Adress;
+    private String Mask;
+    private String gateway;
 
-    public Router(String nameProvider, int delayDevice) {
-        super(3);
-
+    public String getAdress() {
+        return Adress;
     }
-    public String getIpAdress() {
-        return IpAdress;
+
+    public String getGateway() {
+        return gateway;
+    }
+
+    public String getMask() {
+        return Mask;
+    }
+
+    public Router(String Address, String Mask, String Gateway) {
+        super(100);
+        this.Adress = Address;
+        this.Mask = Mask;
+        this.gateway = Gateway;
     }
 
     @Override

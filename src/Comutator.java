@@ -1,7 +1,9 @@
 public class Comutator extends CommunicationDevice {
-    public Comutator(String nameProvider, int delayDevice) {
-        super(2);
+    public Comutator(String MacAddress) {
+        super(10000);
+        this.MacAddress = MacAddress;
     }
+    private String MacAddress;
     @Override
     public String GetNameDevice() {
         return "Comutator";

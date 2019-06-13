@@ -1,8 +1,13 @@
 public class Modem extends CommunicationDevice {
-    public Modem(String nameProvider, int delayDevice) {
-        super(2);
-
+    public Modem(String protocol) {
+        super(33600);
+        this.protocol = protocol;
     }
+    public String getProtocol() {
+        return protocol;
+    }
+
+    private String protocol;
 
     @Override
     public String GetNameDevice() {

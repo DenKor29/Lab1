@@ -1,17 +1,16 @@
 public class CommunicationDevice {
-    public CommunicationDevice(int typeosi) {
+    public CommunicationDevice(int speed) {
         NameDevice = "CommunicationDevice";
         DelayDevice = 0;
-        this.typeOSI = typeosi;
+        this.speed = speed;
     }
     public String NameDevice;
     public int DelayDevice;
-    private int typeOSI;
+    private int speed;
 
-    public int gettypeOSI() {
-        return typeOSI;
+    public int getSpeed() {
+        return speed;
     }
-
 
     public String GetNameDevice() {
         return NameDevice;
