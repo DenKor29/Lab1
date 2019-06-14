@@ -3,6 +3,11 @@ public class Comutator extends CommunicationDevice {
         super(10000);
         this.MacAddress = MacAddress;
     }
+
+    public String getMacAddress() {
+        return MacAddress;
+    }
+
     private String MacAddress;
     @Override
     public String GetNameDevice() {
